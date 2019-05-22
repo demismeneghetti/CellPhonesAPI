@@ -23,7 +23,7 @@ namespace CellPhonesAPI.Service
 
         public CellPhone Get(string id)
         {
-            return _cellPhones.Find<CellPhone>(cellphone => cellphone.Id == id).FirstOrDefault();
+            return _cellPhones.Find(cellphone => cellphone.Id == id).FirstOrDefault();
         }
 
         public CellPhone Create(CellPhone cellPhone)
